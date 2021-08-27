@@ -274,7 +274,7 @@ export default function Header() {
                     <a href="/images/gallary/p3-gallery1.jpg">
                       <img
                         src="/images/gallary/p3-gallery1-150x150.jpg"
-                        className
+                        // className
                         alt=""
                       />
                     </a>
@@ -285,7 +285,7 @@ export default function Header() {
                     <a href="/images/gallary/p3-gallery2.jpg">
                       <img
                         src="/images/gallary/p3-gallery2-150x150.jpg"
-                        className
+                        // className
                         alt=""
                       />
                     </a>
@@ -296,7 +296,7 @@ export default function Header() {
                     <a href="/images/gallary/p3-gallery4.jpg">
                       <img
                         src="/images/gallary/p3-gallery4-150x150.jpg"
-                        className
+                        // className
                         alt=""
                       />
                     </a>
@@ -307,7 +307,7 @@ export default function Header() {
                     <a href="/images/gallary/p3-gallery5.jpg">
                       <img
                         src="/images/gallary/p3-gallery5-150x150.jpg"
-                        className
+                        // className
                         alt=""
                       />
                     </a>
@@ -318,7 +318,7 @@ export default function Header() {
                     <a href="/images/gallary/p4-gallery1.jpg">
                       <img
                         src="/images/gallary/p4-gallery1-150x150.jpg"
-                        className
+                        // className
                         alt=""
                       />
                     </a>
@@ -329,7 +329,7 @@ export default function Header() {
                     <a href="/images/gallary/p4-gallery2.jpg">
                       <img
                         src="/images/gallary/p4-gallery2-150x150.jpg"
-                        className
+                        // className
                         alt=""
                       />
                     </a>

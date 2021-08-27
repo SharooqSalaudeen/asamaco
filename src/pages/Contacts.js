@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Contacts() {
   const [messaged, setMessaged] = React.useState(0);
@@ -20,7 +21,7 @@ export default function Contacts() {
                     <h1 className="page-title">Contact</h1>
                     <ul id="breadcrumbs" className="breadcrumbs none-style">
                       <li>
-                        <a href="index.html">Home</a>
+                        <Link to="/">Home</Link>
                       </li>
                       <li className="active">Contacts</li>
                     </ul>
@@ -51,7 +52,7 @@ export default function Contacts() {
                               name="name"
                               // defaultValue
                               size={40}
-                              className
+                              // className
                               // aria-invalid="false"
                               placeholder="Your Name"
                               required
@@ -63,7 +64,7 @@ export default function Contacts() {
                               name="email"
                               // defaultValue
                               size={40}
-                              className
+                              // className
                               // aria-invalid="false"
                               placeholder="Your Email "
                               required
@@ -74,7 +75,7 @@ export default function Contacts() {
                               name="message"
                               cols={40}
                               rows={10}
-                              className
+                              // className
                               // aria-invalid="false"
                               placeholder="Message..."
                               required

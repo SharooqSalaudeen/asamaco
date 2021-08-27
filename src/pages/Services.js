@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import ServiceGrid from "../components/ServiceGrid";
 
 export default function Services() {
@@ -11,7 +13,7 @@ export default function Services() {
               <h1 className="page-title">Our Services</h1>
               <ul id="breadcrumbs" className="breadcrumbs none-style">
                 <li>
-                  <a href="index.html">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li className="active">Our Services</li>
               </ul>

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import FactsCounter from "../components/FactsCounter";
 
 export default function AboutUs() {
@@ -11,7 +13,7 @@ export default function AboutUs() {
               <h1 className="page-title">About Us</h1>
               <ul id="breadcrumbs" className="breadcrumbs none-style">
                 <li>
-                  <a href="index.html">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li className="active">About Us</li>
               </ul>
@@ -104,7 +106,7 @@ export default function AboutUs() {
                       <span className="ot-flaticon-paint" />
                       <h5>Our Vision</h5>
                     </div>
-                    <img src="/images/about/support2.jpg" className alt="" />
+                    <img src="/images/about/support2.jpg" alt="" />
                   </div>
                 </div>
               </div>

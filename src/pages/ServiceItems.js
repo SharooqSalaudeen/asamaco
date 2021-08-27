@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
@@ -66,10 +67,10 @@ export default function ServiceItems() {
               <h1 className="page-title">{servicesTitle[service]}</h1>
               <ul id="breadcrumbs" className="breadcrumbs none-style">
                 <li>
-                  <a href="index.html">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="our-services.html">Our Services</a>
+                  <Link to="/services">Our Services</Link>
                 </li>
                 <li className="active">{servicesTitle[service]}</li>
               </ul>

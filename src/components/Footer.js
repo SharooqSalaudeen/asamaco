@@ -155,7 +155,7 @@ export default function Footer() {
         </div>
       </div>
       <a id="back-to-top" href="/#" className="show">
-        <i class="ot-flaticon-left-arrow"></i>
+        <i className="ot-flaticon-left-arrow"></i>
       </a>
     </>
   );
