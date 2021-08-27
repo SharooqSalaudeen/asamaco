@@ -1,6 +1,12 @@
 import React from "react";
 
 export default function Contacts() {
+  const [messaged, setMessaged] = React.useState(0);
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    setMessaged(1);
+  };
   return (
     <>
       <div>
@@ -34,19 +40,20 @@ export default function Contacts() {
                       </p>
                       <form
                         action="contact.php"
-                        method="post"
+                        // method="post"
                         className="wpcf7"
+                        onSubmit={(e) => handleSubscribe(e)}
                       >
                         <div className="main-form">
                           <p>
                             <input
                               type="text"
                               name="name"
-                              defaultValue
+                              // defaultValue
                               size={40}
                               className
-                              aria-invalid="false"
-                              placeholder="Your Name *"
+                              // aria-invalid="false"
+                              placeholder="Your Name"
                               required
                             />
                           </p>
@@ -54,11 +61,11 @@ export default function Contacts() {
                             <input
                               type="email"
                               name="email"
-                              defaultValue
+                              // defaultValue
                               size={40}
                               className
-                              aria-invalid="false"
-                              placeholder="Your Email *"
+                              // aria-invalid="false"
+                              placeholder="Your Email "
                               required
                             />
                           </p>
@@ -68,12 +75,28 @@ export default function Contacts() {
                               cols={40}
                               rows={10}
                               className
-                              aria-invalid="false"
+                              // aria-invalid="false"
                               placeholder="Message..."
                               required
                               defaultValue={""}
                             />
                           </p>
+                          {messaged ? (
+                            <p style={{ color: "orangered" }}>
+                              {" "}
+                              The log is full. Please send a mail on{" "}
+                              <a
+                                href="mailto:info@asamaco.com"
+                                style={{
+                                  color: "orangered",
+                                  textDecoration: "underline",
+                                }}
+                              >
+                                info@asamaco.com
+                              </a>
+                              .
+                            </p>
+                          ) : null}
                           <p>
                             <button type="submit" className="octf-btn">
                               Send Message
@@ -98,7 +121,10 @@ export default function Contacts() {
                         <i className="ot-flaticon-place" />
                         <div className="info-text">
                           <h6>OUR ADDRESS:</h6>
-                          <p>411 University St, Seattle, USA</p>
+                          <p>
+                            V/364/b, Chempumoola, Azhoor.P.O,
+                            Thiruvananthapuram, India
+                          </p>
                         </div>
                       </div>
                       <div className="contact-info">
@@ -106,13 +132,13 @@ export default function Contacts() {
                         <div className="info-text">
                           <h6>OUR MAILBOX:</h6>
                           <p>
-                            <a href="mailto:theratio_interior@mail.com">
-                              theratio_interior@mail.com
+                            <a href="mailto:info@asamaco.com">
+                              info@asamaco.com
                             </a>
                           </p>
                         </div>
                       </div>
-                      <div className="contact-info">
+                      {/* <div className="contact-info">
                         <i className="ot-flaticon-phone-call" />
                         <div className="info-text">
                           <h6>OUR PHONE:</h6>
@@ -122,8 +148,9 @@ export default function Contacts() {
                             </a>
                           </p>
                         </div>
-                      </div>
-                      <div className="list-social">
+                      </div> */}
+                      <div style={{ padding: "50px 0" }} />
+                      {/* <div className="list-social">
                         <ul>
                           <li>
                             <a href="http://twitter.com" target="_self">
@@ -146,7 +173,7 @@ export default function Contacts() {
                             </a>
                           </li>
                         </ul>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -155,7 +182,8 @@ export default function Contacts() {
             <div className="contact-map">
               <div className="map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86077.66255184308!2d-122.40402224079803!3d47.60810999586645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab3f905c4b1%3A0x96bf575ff75ab1aa!2s411%20University%20St%2C%20Seattle%2C%20WA%2098101%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1584084043716!5m2!1svi!2s"
+                  title="Asama Construction International Pvt Ltd Google Map."
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986.1032528124706!2d76.80403812921688!3d8.652211299611443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05ebef9568e63f%3A0xf18f5c204c4e3c48!2sAsama%20Construction%20International%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1630047451358!5m2!1sen!2sin"
                   height={522}
                   style={{ border: 0 }}
                   allowFullScreen

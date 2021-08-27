@@ -29,16 +29,13 @@ export default function ServiceItem4() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src="https://via.placeholder.com/750x696.png" alt="" />
+            <img src="/images/service-list/4/service-silder7.jpg" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://via.placeholder.com/750x696.png" alt="" />
+            <img src="/images/service-list/4/service-silder8.jpg" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://via.placeholder.com/750x696.png" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://via.placeholder.com/750x696.png" alt="" />
+            <img src="/images/service-list/4/service-silder7.jpg" alt="" />
           </SwiperSlide>
         </Swiper>
         <p>
@@ -61,7 +58,7 @@ export default function ServiceItem4() {
           designers embrace biophilia.
         </p>
         <img
-          src="https://via.placeholder.com/870x520.png"
+          src="/images/service-list/4/image1-service4.jpg"
           className="detail-img"
           alt=""
         />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 // Import Swiper styles
@@ -37,24 +37,25 @@ export default function ServiceItems() {
   const [service, setService] = useState(0);
 
   const serviceItem = () => {
-    if (service == 0) {
+    if (service === 0) {
       return <ServiceItem1 />;
-    } else if (service == 1) {
+    } else if (service === 1) {
       return <ServiceItem2 />;
-    } else if (service == 2) {
+    } else if (service === 2) {
       return <ServiceItem3 />;
-    } else if (service == 3) {
+    } else if (service === 3) {
       return <ServiceItem4 />;
-    } else if (service == 4) {
+    } else if (service === 4) {
       return <ServiceItem5 />;
-    } else if (service == 5) {
+    } else if (service === 5) {
       return <ServiceItem6 />;
     }
   };
 
   useEffect(() => {
-    setService(id);
-    console.log(service);
+    let IntId = Number(id);
+    setService(IntId);
+    // console.log(service);
   }, [id]);
   return (
     <div>
@@ -82,33 +83,33 @@ export default function ServiceItems() {
             <div className="widget-area col-lg-3 col-md-12">
               <div className="widget widget_nav_menu">
                 <ul className="services-menu">
-                  <li className={service == 0 ? "current-menu-item" : null}>
-                    <a onClick={() => setService(0)}>
+                  <li className={service === 0 ? "current-menu-item" : null}>
+                    <a href={() => false} onClick={() => setService(0)}>
                       <span>01.</span> Design &amp; Planning
                     </a>
                   </li>
-                  <li className={service == 1 ? "current-menu-item" : null}>
-                    <a onClick={() => setService(1)}>
+                  <li className={service === 1 ? "current-menu-item" : null}>
+                    <a href={() => false} onClick={() => setService(1)}>
                       <span>02.</span> Exterior Design
                     </a>
                   </li>
-                  <li className={service == 2 ? "current-menu-item" : null}>
-                    <a onClick={() => setService(2)}>
+                  <li className={service === 2 ? "current-menu-item" : null}>
+                    <a href={() => false} onClick={() => setService(2)}>
                       <span>03.</span> Custom Solutions
                     </a>
                   </li>
-                  <li className={service == 3 ? "current-menu-item" : null}>
-                    <a onClick={() => setService(3)}>
+                  <li className={service === 3 ? "current-menu-item" : null}>
+                    <a href={() => false} onClick={() => setService(3)}>
                       <span>04.</span> Furniture &amp; Decor
                     </a>
                   </li>
-                  <li className={service == 4 ? "current-menu-item" : null}>
-                    <a onClick={() => setService(4)}>
+                  <li className={service === 4 ? "current-menu-item" : null}>
+                    <a href={() => false} onClick={() => setService(4)}>
                       <span>05.</span> Creating Concept
                     </a>
                   </li>
-                  <li className={service == 5 ? "current-menu-item" : null}>
-                    <a onClick={() => setService(5)}>
+                  <li className={service === 5 ? "current-menu-item" : null}>
+                    <a href={() => false} onClick={() => setService(5)}>
                       <span>06.</span> Customer`s Control
                     </a>
                   </li>

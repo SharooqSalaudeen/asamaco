@@ -13,13 +13,13 @@ export default function Header() {
                 <div className="octf-mainbar-row octf-row">
                   <div className="octf-col logo-col no-padding">
                     <div id="site-logo" className="site-logo">
-                      <a href="/#">
+                      <Link to="/">
                         <img
-                          src="/images/home3.svg"
-                          alt="Theratio"
+                          src="/images/asama-logo-transparent.png"
+                          alt="Asama Construction International Pvt Ltd"
                           className="logo-h3"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="octf-col menu-col no-padding">
@@ -72,12 +72,26 @@ export default function Header() {
                   <div className="octf-col cta-col text-right no-padding">
                     {/* Call To Action */}
                     <div className="octf-btn-cta">
-                      <div className="octf-search octf-cta-header">
+                      {/* serach button */}
+                      {/* <div className="octf-search octf-cta-header">
                         <div className="toggle_search octf-cta-icons">
                           <i className="ot-flaticon-search" />
-                        </div>
-                        {/* Form Search on Header */}
-                        <div className="h-search-form-field collapse">
+                        </div> */}
+                      {/* Form Search on Header */}
+                      <div
+                        className="ot-button"
+                        style={{ alignSelf: "center", marginRight: "40px" }}
+                      >
+                        <a
+                          href="https://asamaco.com/mail"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="octf-btn octf-btn-dark border-hover-dark"
+                        >
+                          Login
+                        </a>
+                      </div>
+                      {/* <div className="h-search-form-field collapse">
                           <div className="h-search-form-inner">
                             <form
                               role="search"
@@ -97,7 +111,7 @@ export default function Header() {
                             </form>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className="octf-sidepanel octf-cta-header">
                         <div className="site-overlay panel-overlay" />
                         <div
@@ -127,12 +141,25 @@ export default function Header() {
                 </div>
               </div>
               <div className="octf-col justify-content-end">
-                <div className="octf-search octf-cta-header">
+                {/* <div className="octf-search octf-cta-header">
                   <div className="toggle_search octf-cta-icons">
                     <i className="ot-flaticon-search" />
-                  </div>
-                  {/* Form Search on Header */}
-                  <div className="h-search-form-field collapse">
+                  </div> */}
+                {/* Form Search on Header */}
+                <div
+                  className="ot-button"
+                  style={{ alignSelf: "center", marginRight: "40px" }}
+                >
+                  <a
+                    href="https://asamaco.com/mail"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="octf-btn octf-btn-light border-hover-light"
+                  >
+                    Login
+                  </a>
+                </div>
+                {/* <div className="h-search-form-field collapse">
                     <div className="h-search-form-inner">
                       <form role="search" method="get" className="search-form">
                         <input
@@ -148,7 +175,7 @@ export default function Header() {
                       </form>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="octf-menu-mobile octf-cta-header">
                   <div id="mmenu-toggle" className="mmenu-toggle">
                     <button>
@@ -158,7 +185,7 @@ export default function Header() {
                   <div className="site-overlay mmenu-overlay" />
                   <div id="mmenu-wrapper" className="mmenu-wrapper on-right">
                     <div className="mmenu-inner">
-                      <a className="mmenu-close" href="#">
+                      <a className="mmenu-close" href="/#">
                         <i className="ot-flaticon-right-arrow" />
                       </a>
                       <div className="mobile-nav">
@@ -166,51 +193,49 @@ export default function Header() {
                           id="menu-main-menu"
                           className="mobile_mainmenu none-style"
                         >
-                          <li className="menu-item-has-children current-menu-item current-menu-ancestor">
-                            <a href="index.html">Home</a>
+                          {/* <li className="menu-item-has-children current-menu-item current-menu-ancestor"> */}
+                          <li>
+                            <Link to="/"> Home </Link>
                           </li>
-
                           <li className="menu-item-has-children">
-                            <a href="#">Services</a>
+                            <Link to="/services"> Services </Link>
+                            {/* <a href="#">Services</a> */}
                             <ul className="sub-menu">
                               <li>
-                                <a href="servcies-detail-1.html">
+                                <Link to="/serviceitem/0">
                                   Design &amp; Planning
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="servcies-detail-2.html">
-                                  Exterior Design
-                                </a>
+                                <Link to="/serviceitem/1">Exterior Design</Link>
                               </li>
                               <li>
-                                <a href="servcies-detail-3.html">
+                                <Link to="/serviceitem/2">
                                   Custom Solutions
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="servcies-detail-4.html">
+                                <Link to="/serviceitem/3">
                                   Furniture &amp; Decor
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="servcies-detail-5.html">
+                                <Link to="/serviceitem/4">
                                   Creating Concept
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="servcies-detail-6.html">
+                                <Link to="/serviceitem/5">
                                   Author’s Control
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href="aboutus.html">About Us</a>
+                            <Link to="/aboutus"> About Us </Link>
                           </li>
-
                           <li>
-                            <a href="contact.html">Contacts</a>
+                            <Link to="/contacts"> Contacts </Link>
                           </li>
                         </ul>
                       </div>
@@ -223,14 +248,17 @@ export default function Header() {
         </div>
       </header>
       <div id="side-panel" className="side-panel">
-        <a href="#" className="side-panel-close">
+        <a href="/#" className="side-panel-close">
           <i className="ot-flaticon-close-1" />
         </a>
         <div className="side-panel-block">
           <div className="side-panel-wrap">
             <div className="the-logo">
               <a href="index-html">
-                <img src="images/logo-footer.svg" alt="Theratio" />
+                <img
+                  src="/images/gallary/asama-logo-transparent-white1.png"
+                  alt="Theratio"
+                />
               </a>
             </div>
             <div className="ot-heading">
@@ -243,9 +271,9 @@ export default function Header() {
               >
                 <figure className="gallery-item">
                   <div className="gallery-icon landscape">
-                    <a href="https://via.placeholder.com/1440x930.png">
+                    <a href="/images/gallary/p3-gallery1.jpg">
                       <img
-                        src="https://via.placeholder.com/150x150.png"
+                        src="/images/gallary/p3-gallery1-150x150.jpg"
                         className
                         alt=""
                       />
@@ -254,9 +282,9 @@ export default function Header() {
                 </figure>
                 <figure className="gallery-item">
                   <div className="gallery-icon landscape">
-                    <a href="https://via.placeholder.com/1440x930.png">
+                    <a href="/images/gallary/p3-gallery2.jpg">
                       <img
-                        src="https://via.placeholder.com/150x150.png"
+                        src="/images/gallary/p3-gallery2-150x150.jpg"
                         className
                         alt=""
                       />
@@ -265,9 +293,9 @@ export default function Header() {
                 </figure>
                 <figure className="gallery-item">
                   <div className="gallery-icon landscape">
-                    <a href="https://via.placeholder.com/1440x930.png">
+                    <a href="/images/gallary/p3-gallery4.jpg">
                       <img
-                        src="https://via.placeholder.com/150x150.png"
+                        src="/images/gallary/p3-gallery4-150x150.jpg"
                         className
                         alt=""
                       />
@@ -276,9 +304,9 @@ export default function Header() {
                 </figure>
                 <figure className="gallery-item">
                   <div className="gallery-icon landscape">
-                    <a href="https://via.placeholder.com/1440x930.png">
+                    <a href="/images/gallary/p3-gallery5.jpg">
                       <img
-                        src="https://via.placeholder.com/150x150.png"
+                        src="/images/gallary/p3-gallery5-150x150.jpg"
                         className
                         alt=""
                       />
@@ -287,9 +315,9 @@ export default function Header() {
                 </figure>
                 <figure className="gallery-item">
                   <div className="gallery-icon landscape">
-                    <a href="https://via.placeholder.com/1440x930.png">
+                    <a href="/images/gallary/p4-gallery1.jpg">
                       <img
-                        src="https://via.placeholder.com/150x150.png"
+                        src="/images/gallary/p4-gallery1-150x150.jpg"
                         className
                         alt=""
                       />
@@ -298,9 +326,9 @@ export default function Header() {
                 </figure>
                 <figure className="gallery-item">
                   <div className="gallery-icon landscape">
-                    <a href="https://via.placeholder.com/1440x930.png">
+                    <a href="/images/gallary/p4-gallery2.jpg">
                       <img
-                        src="https://via.placeholder.com/150x150.png"
+                        src="/images/gallary/p4-gallery2-150x150.jpg"
                         className
                         alt=""
                       />
@@ -319,26 +347,24 @@ export default function Header() {
                     <i className="ot-flaticon-place" />
                   </span>
                   <span className="panel-list-text">
-                    411 University St, Seattle, USA
+                    V/364/b, Chempumoola, Azhoor.P.O, Thiruvananthapuram
                   </span>
                 </li>
                 <li className="panel-list-item">
                   <span className="panel-list-icon">
                     <i className="ot-flaticon-mail" />
                   </span>
-                  <span className="panel-list-text">
-                    theratio_interior@mail.com
-                  </span>
+                  <span className="panel-list-text">info@asamaco.com</span>
                 </li>
-                <li className="panel-list-item">
+                {/* <li className="panel-list-item">
                   <span className="panel-list-icon">
                     <i className="ot-flaticon-phone-call" />
                   </span>
                   <span className="panel-list-text">+1 800 456 789 123</span>
-                </li>
+                </li> */}
               </ul>
             </div>
-            <div className="side-panel-social">
+            {/* <div className="side-panel-social">
               <ul>
                 <li>
                   <a href="http://twitter.com" target="_self">
@@ -361,7 +387,7 @@ export default function Header() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

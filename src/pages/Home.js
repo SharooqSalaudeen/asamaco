@@ -1,5 +1,9 @@
 import React from "react";
+import FactsCounter from "../components/FactsCounter";
 // import Slider from "../components/homeSections/Slider";
+import CustomSlider from "../components/homeSections/CustomSlider";
+import ServiceGrid from "../components/ServiceGrid";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -7,7 +11,7 @@ export default function Home() {
       {/* <div id="royal_preloader" /> */}
 
       <div id="content" className="site-content">
-        <div className="page-header dtable text-center header-transparent page-header-contact">
+        {/* <div className="page-header dtable text-center header-transparent page-header-contact">
           <div className="dcell">
             <div className="container">
               <h1 className="page-title">Home</h1>
@@ -18,8 +22,9 @@ export default function Home() {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <Slider /> */}
+        <CustomSlider />
         <section className="about-3 p-xl-0 pb-sm-0">
           <div className="grid-lines grid-lines-vertical">
             <span className="g-line-vertical line-left color-line-default" />
@@ -29,7 +34,7 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-6 col-md-12 mb-5 mb-lg-0 align-self-center">
                 <div className="about-img-3">
-                  <img src="https://via.placeholder.com/716x611.png" alt="" />
+                  <img src="/images/home/image1-home3.png" alt="" />
                 </div>
               </div>
               <div className="col-lg-6 col-md-12 align-self-center">
@@ -55,16 +60,16 @@ export default function Home() {
                         </div>
                         <div className="content-box">
                           <h5>
-                            <a href="about-us.html">3D Visualization</a>
+                            <Link to="/services">3D Visualization</Link>
                           </h5>
                           <p>
                             3D sketch of each detail of your future interior.
                           </p>
                         </div>
                         <div className="link-box">
-                          <a href="about-us.html" className="btn-details">
+                          <Link to="/services" className="btn-details">
                             READ MORE
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -75,7 +80,7 @@ export default function Home() {
                         </div>
                         <div className="content-box">
                           <h5>
-                            <a href="about-us.html">Individual Project</a>
+                            <Link to="/services">Individual Project</Link>
                           </h5>
                           <p>
                             The basic philosophy of studio is to create
@@ -83,9 +88,9 @@ export default function Home() {
                           </p>
                         </div>
                         <div className="link-box">
-                          <a href="about-us.html" className="btn-details">
+                          <Link to="/services" className="btn-details">
                             READ MORE
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -161,9 +166,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-6 col-sm-12 align-self-center">
-                <img src="https://via.placeholder.com/630x520.png" alt="" />
+                <img src="/images/home/image2-home3.jpg" alt="" />
               </div>
-              <div className="space-150" />
+              {/* <div className="space-150" /> */}
             </div>
           </div>
         </section>
@@ -173,130 +178,16 @@ export default function Home() {
             <span className="g-line-vertical line-right color-line-default" />
           </div>
           <div className="container">
-            <div className="row">
-              <div className="col-md-12 text-center theratio-align-center">
-                <div className="ot-heading is-dots">
-                  <span>[ OUR SERVICES ]</span>
-                  <h2 className="main-heading">What Can We Offer</h2>
-                </div>
-                <div className="space-50" />
-              </div>
+            <ServiceGrid />
+            {/* added row srq */}
+            <div className="row" style={{ padding: "0 0 40px 0" }}>
+              <img
+                src="/images/home/image1-faq.jpg"
+                alt=""
+                style={{ minHeight: "20vh", objectFit: "cover" }}
+              />
             </div>
-            <div className="row justify-content-center">
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="icon-box icon-box--bg-img icon-box--icon-top icon-box--is-line-hover icon-bg-1 text-center mb-30">
-                  <div className="icon-main">
-                    <img src="https://via.placeholder.com/74x84.png" alt="" />
-                  </div>
-                  <div className="content-box">
-                    <h5>
-                      <a href="servcies-detail-1.html">Design &amp; Planning</a>
-                    </h5>
-                    <p>We will help you to get the result you dreamed of.</p>
-                  </div>
-                  <div className="link-box">
-                    <a href="servcies-detail-1.html" className="btn-details">
-                      READ MORE
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="icon-box icon-box--bg-img icon-box--icon-top icon-box--is-line-hover icon-bg-2 text-center mb-30">
-                  <div className="icon-main">
-                    <img src="https://via.placeholder.com/74x84.png" alt="" />
-                  </div>
-                  <div className="content-box">
-                    <h5>
-                      <a href="servcies-detail-1.html">Custom Solutions</a>
-                    </h5>
-                    <p>
-                      Individual, aesthetically stunning solutions for
-                      customers.
-                    </p>
-                  </div>
-                  <div className="link-box">
-                    <a href="servcies-detail-1.html" className="btn-details">
-                      READ MORE
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="icon-box icon-box--bg-img icon-box--icon-top icon-box--is-line-hover icon-bg-3 text-center mb-30">
-                  <div className="icon-main">
-                    <img src="https://via.placeholder.com/74x84.png" alt="" />
-                  </div>
-                  <div className="content-box">
-                    <h5>
-                      <a href="servcies-detail-1.html">Furniture &amp; Decor</a>
-                    </h5>
-                    <p>We create and produce our product design lines.</p>
-                  </div>
-                  <div className="link-box">
-                    <a href="servcies-detail-1.html" className="btn-details">
-                      READ MORE
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="icon-box icon-box--bg-img icon-box--icon-top icon-box--is-line-hover icon-bg-4 text-center mb-30 mb-lg-0">
-                  <div className="icon-main">
-                    <img src="https://via.placeholder.com/74x84.png" alt="" />
-                  </div>
-                  <div className="content-box">
-                    <h5>
-                      <a href="servcies-detail-1.html">Furniture &amp; Decor</a>
-                    </h5>
-                    <p>We create and produce our product design lines.</p>
-                  </div>
-                  <div className="link-box">
-                    <a href="servcies-detail-1.html" className="btn-details">
-                      READ MORE
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="icon-box icon-box--bg-img icon-box--icon-top icon-box--is-line-hover icon-bg-5 text-center mb-30 mb-md-0">
-                  <div className="icon-main">
-                    <img src="https://via.placeholder.com/74x84.png" alt="" />
-                  </div>
-                  <div className="content-box">
-                    <h5>
-                      <a href="servcies-detail-1.html">Furniture &amp; Decor</a>
-                    </h5>
-                    <p>We create and produce our product design lines.</p>
-                  </div>
-                  <div className="link-box">
-                    <a href="servcies-detail-1.html" className="btn-details">
-                      READ MORE
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="icon-box icon-box--bg-img icon-box--icon-top icon-box--is-line-hover icon-bg-6 text-center  mb-30 mb-md-0">
-                  <div className="icon-main">
-                    <img src="https://via.placeholder.com/74x84.png" alt="" />
-                  </div>
-                  <div className="content-box">
-                    <h5>
-                      <a href="servcies-detail-1.html">Furniture &amp; Decor</a>
-                    </h5>
-                    <p>We create and produce our product design lines.</p>
-                  </div>
-                  <div className="link-box">
-                    <a href="servcies-detail-1.html" className="btn-details">
-                      READ MORE
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-80" />
-            </div>
-            <div className="row">
+            {/* <div className="row">
               <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-4 mb-xl-0">
                 <div className="ot-counter">
                   <div>
@@ -345,18 +236,19 @@ export default function Home() {
                   <h6>Offices Worldwide</h6>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <FactsCounter />
           </div>
         </section>
-        <div className="no-padding d-none d-xl-block">
+        {/* <div className="no-padding d-none d-xl-block">
           <div className="grid-lines grid-lines-vertical">
             <span className="g-line-vertical line-left color-line-default" />
             <span className="g-line-vertical line-right color-line-default" />
           </div>
           <div className="container-fluid px-xl-90">
-            <img src="https://via.placeholder.com/1920x441.png" alt="" />
+            <img src="/images/home/image1-faq.jpg" alt="" />
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* #page */}

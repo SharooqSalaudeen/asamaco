@@ -1,4 +1,5 @@
 import React from "react";
+import FactsCounter from "../components/FactsCounter";
 
 export default function AboutUs() {
   return (
@@ -23,7 +24,7 @@ export default function AboutUs() {
           <div className="row">
             <div className="col-lg-6 col-md-12 align-self-center text-center mb-5 mb-lg-0">
               <div className="about-img">
-                <img src="https://via.placeholder.com/623x570.png" alt="" />
+                <img src="/images/about/asama-aboutus.png" alt="" />
               </div>
             </div>
             <div className="col-lg-6 col-md-12 align-self-center">
@@ -40,14 +41,14 @@ export default function AboutUs() {
                   what you want – we will help you to get the result you dreamed
                   of.
                 </p>
-                <div className="ot-button">
+                {/* <div className="ot-button">
                   <a
                     href="portfolio-masonry.html"
                     className="octf-btn octf-btn-dark border-hover-dark"
                   >
                     View Projects
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -81,7 +82,7 @@ export default function AboutUs() {
                       <span className="ot-flaticon-brickwall" />
                       <h5>Our Missions</h5>
                     </div>
-                    <img src="https://via.placeholder.com/750x628.png" alt="" />
+                    <img src="/images/about/support1.jpg" alt="" />
                   </div>
                 </div>
               </div>
@@ -103,11 +104,7 @@ export default function AboutUs() {
                       <span className="ot-flaticon-paint" />
                       <h5>Our Vision</h5>
                     </div>
-                    <img
-                      src="https://via.placeholder.com/750x628.png"
-                      className
-                      alt=""
-                    />
+                    <img src="/images/about/support2.jpg" className alt="" />
                   </div>
                 </div>
               </div>
@@ -130,7 +127,7 @@ export default function AboutUs() {
                       <h5>Our Values</h5>
                     </div>
                     <img
-                      src="https://via.placeholder.com/750x628.png"
+                      src="/images/about/support2.jpg"
                       className="attachment-full size-full lazyloaded"
                       alt=""
                     />
@@ -143,56 +140,7 @@ export default function AboutUs() {
       </section>
       <section className="about-counter">
         <div className="container">
-          <div className="row">
-            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-4 mb-xl-0">
-              <div className="ot-counter">
-                <div>
-                  <span>[</span>
-                  <span className="num" data-to={180} data-time={2000}>
-                    0
-                  </span>
-                  <span>+]</span>
-                </div>
-                <h6>Current Clients</h6>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-4 mb-xl-0">
-              <div className="ot-counter">
-                <div>
-                  <span>[</span>
-                  <span className="num" data-to={10} data-time={2000}>
-                    0
-                  </span>
-                  <span>+]</span>
-                </div>
-                <h6>years of experience</h6>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-4 mb-sm-0">
-              <div className="ot-counter">
-                <div>
-                  <span>[</span>
-                  <span className="num" data-to={35} data-time={2000}>
-                    0
-                  </span>
-                  <span>+]</span>
-                </div>
-                <h6>awards winning</h6>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-              <div className="ot-counter">
-                <div>
-                  <span>[</span>
-                  <span className="num" data-to={5} data-time={2000}>
-                    0
-                  </span>
-                  <span>+]</span>
-                </div>
-                <h6>Offices Worldwide</h6>
-              </div>
-            </div>
-          </div>
+          <FactsCounter />
         </div>
       </section>
       <section className="how-it-work">
@@ -276,9 +224,9 @@ export default function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-7 col-md-12">
+            <div className="col-lg-7 col-md-12" style={{ zIndex: "-1" }}>
               <div className="work-img">
-                <img src="https://via.placeholder.com/1093x1119.png" alt="" />
+                <img src="/images/about/image2-aboutus.png" alt="" />
               </div>
             </div>
           </div>

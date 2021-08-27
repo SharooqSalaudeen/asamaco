@@ -1,4 +1,5 @@
 import React from "react";
+import ServiceGrid from "../components/ServiceGrid";
 
 export default function Services() {
   return (
@@ -29,14 +30,14 @@ export default function Services() {
                     Ambitious Studio with a Successful Concept &amp; Ideas
                   </h2>
                 </div>
-                <div className="ot-button">
+                {/* <div className="ot-button">
                   <a
                     href="portfolio-masonry.html"
                     className="octf-btn octf-btn-dark"
                   >
                     View Projects
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-8 col-md-12">
@@ -48,10 +49,13 @@ export default function Services() {
                         <span className="ot-flaticon-sphere" />
                       </div>
                       <div className="content-box">
-                        <h5>
-                          <a href="#" className="title-link">
-                            Customer Focus
-                          </a>
+                        <h5
+                          className="title-link"
+                          style={{ cursor: "default" }}
+                        >
+                          {/* <a href="#" className="title-link"> */}
+                          Customer Focus
+                          {/* </a> */}
                         </h5>
                         <p>
                           Customers choose us for the simplicity of
@@ -67,10 +71,13 @@ export default function Services() {
                         <span className="ot-flaticon-measure" />
                       </div>
                       <div className="content-box">
-                        <h5>
-                          <a href="#" className="title-link">
-                            Professionalism
-                          </a>
+                        <h5
+                          className="title-link"
+                          style={{ cursor: "default" }}
+                        >
+                          {/* <a href="#" className="title-link"> */}
+                          Professionalism
+                          {/* </a> */}
                         </h5>
                         <p>
                           We develop a full cycle of project documentation: an
@@ -88,10 +95,13 @@ export default function Services() {
                         <span className="ot-flaticon-home" />
                       </div>
                       <div className="content-box">
-                        <h5>
-                          <a href="#" className="title-link">
-                            Multi Experience
-                          </a>
+                        <h5
+                          className="title-link"
+                          style={{ cursor: "default" }}
+                        >
+                          {/* <a href="#" className="title-link"> */}
+                          Multi Experience
+                          {/* </a> */}
                         </h5>
                         <p>
                           We provide a wide range of services, we work in
@@ -107,10 +117,13 @@ export default function Services() {
                         <span className="ot-flaticon-house" />
                       </div>
                       <div className="content-box">
-                        <h5>
-                          <a href="#" className="title-link">
-                            Author`s Supervision
-                          </a>
+                        <h5
+                          className="title-link"
+                          style={{ cursor: "default" }}
+                        >
+                          {/* <a href="#" className="title-link"> */}
+                          Author`s Supervision
+                          {/* </a> */}
                         </h5>
                         <p>
                           We develop an attractive and convenient space for work
@@ -168,7 +181,7 @@ export default function Services() {
       <section className="principes no-padding">
         <div className="row m-0">
           <div className="col-xl-6 col-lg-12 col-md-12 p-0 text-center align-self-center">
-            <img src="https://via.placeholder.com/960x740.png" alt="" />
+            <img src="/images/service-page/image1-service.jpg" alt="" />
           </div>
           <div className="col-xl-6 col-lg-12 col-md-12 p-0 mt-5 mt-lg-0 align-self-center">
             <div className="main-principes">
@@ -216,76 +229,6 @@ export default function Services() {
                       Java solutions.
                     </p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="our-services">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 text-center theratio-align-center">
-              <div className="ot-heading is-dots">
-                <span>[ OUR SERVICES ]</span>
-                <h2 className="main-heading">What Can We Offer</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="icon-box icon-box--bg-img icon-box--icon-top icon-box--is-line-hover icon-bg-1 text-center">
-                <div className="icon-main">
-                  <img src="https://via.placeholder.com/74x84.png" alt="" />
-                </div>
-                <div className="content-box">
-                  <h5>
-                    <a href="servcies-detail-1.html">Design &amp; Planning</a>
-                  </h5>
-                  <p>We will help you to get the result you dreamed of.</p>
-                </div>
-                <div className="link-box">
-                  <a href="servcies-detail-1.html" className="btn-details">
-                    READ MORE
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="icon-box icon-box--bg-img icon-box--icon-top icon-box--is-line-hover icon-bg-2 text-center">
-                <div className="icon-main">
-                  <img src="https://via.placeholder.com/74x84.png" alt="" />
-                </div>
-                <div className="content-box">
-                  <h5>
-                    <a href="servcies-detail-1.html">Custom Solutions</a>
-                  </h5>
-                  <p>
-                    Individual, aesthetically stunning solutions for customers.
-                  </p>
-                </div>
-                <div className="link-box">
-                  <a href="servcies-detail-1.html" className="btn-details">
-                    READ MORE
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="icon-box icon-box--bg-img icon-box--icon-top icon-box--is-line-hover icon-bg-3 text-center">
-                <div className="icon-main">
-                  <img src="https://via.placeholder.com/74x84.png" alt="" />
-                </div>
-                <div className="content-box">
-                  <h5>
-                    <a href="servcies-detail-1.html">Furniture &amp; Decor</a>
-                  </h5>
-                  <p>We create and produce our product design lines.</p>
-                </div>
-                <div className="link-box">
-                  <a href="servcies-detail-1.html" className="btn-details">
-                    READ MORE
-                  </a>
                 </div>
               </div>
             </div>
@@ -419,88 +362,9 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <section className="our-benefits">
+      <section>
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-5 mb-xl-0 order-first order-md-last order-xl-first">
-              <div className="benefits-detail">
-                <div className="ot-heading">
-                  <span>[ our benefits ]</span>
-                  <h2 className="main-heading">
-                    Our Interior and Exterior Services
-                  </h2>
-                </div>
-                <p>
-                  The basic philosophy of our studio is to create individual,
-                  aesthetically stunning solutions for our customers by
-                  lightning-fast development of projects employing unique
-                  styles.
-                </p>
-                <div className="ot-button">
-                  <a
-                    href="portfolio-masonry.html"
-                    className="octf-btn octf-btn-dark"
-                  >
-                    View Projects
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-5 mb-xl-0">
-              <div className="service-box text-center">
-                <div className="box-content">
-                  <div className="image-box img-lgpopup">
-                    <div data-src="https://via.placeholder.com/750x608.png">
-                      <img
-                        src="https://via.placeholder.com/750x608.png"
-                        alt=""
-                      />
-                      <span className="overlay">
-                        <i className="ot-flaticon-add" />
-                      </span>
-                    </div>
-                  </div>
-                  <div className="info-box">
-                    <h4>Interior Design</h4>
-                    <p>
-                      Original design project of high quality raises profit –
-                      this is proved practice customers.
-                    </p>
-                    <a className="btn-details" href="servcies-detail-1.html">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-              <div className="service-box text-center">
-                <div className="box-content">
-                  <div className="image-box img-lgpopup">
-                    <div data-src="https://via.placeholder.com/750x608.png">
-                      <img
-                        src="https://via.placeholder.com/750x608.png"
-                        alt=""
-                      />
-                      <span className="overlay">
-                        <i className="ot-flaticon-add" />
-                      </span>
-                    </div>
-                  </div>
-                  <div className="info-box">
-                    <h4>Exterior Design</h4>
-                    <p>
-                      Original design project of high quality raises profit –
-                      this is proved practice customers.
-                    </p>
-                    <a className="btn-details" href="servcies-detail-2.html">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ServiceGrid />
         </div>
       </section>
     </div>

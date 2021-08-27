@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Header from "./components/Header";
@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs";
 import Error from "./pages/Error";
 import Services from "./pages/Services";
 import ServiceItems from "./pages/ServiceItems";
+import ScrollToTop from "./components/utils/ScrollToTop";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Router>
           <Header />
           <div className="container-top-margin">
+            <ScrollToTop />
             <Switch>
               <Route exact path="/">
                 <Home />
@@ -31,7 +33,6 @@ function App() {
               <Route path="/contacts">
                 <Contacts />
               </Route>
-
               <Route path="/aboutus">
                 <AboutUs />
               </Route>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Error() {
   return (
@@ -13,7 +14,7 @@ export default function Error() {
                 Oops! The page you are looking for does not exist. Please return
                 to the site’s homepage.
               </p>
-              <form role="search" method="get" className="search-form">
+              {/* <form role="search" method="get" className="search-form">
                 <input
                   type="search"
                   className="search-field"
@@ -24,11 +25,11 @@ export default function Error() {
                 <button type="submit" className="search-submit">
                   <i className="ot-flaticon-search" />
                 </button>
-              </form>
+              </form> */}
               <div className="ot-button">
-                <a href="#" className="octf-btn octf-btn-light no-line">
+                <Link to="/" className="octf-btn octf-btn-light no-line">
                   TAKE ME HOME
-                </a>
+                </Link>
               </div>
             </div>
           </div>
