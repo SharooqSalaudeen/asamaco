@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -30,10 +31,10 @@ export default function CustomSlider() {
         slidesPerView={width < 900 ? 1 : 2}
         // slidesPerView={1}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 3500,
-        //     disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
@@ -59,14 +60,14 @@ export default function CustomSlider() {
                   is why, from the first day of the activity of the studio.
                 </p>
                 <div className="ot-button" style={{ alignSelf: "center" }}>
-                  <a
-                    href="https://asamaco.com/mail"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/serviceitem/1"
                     className="octf-btn octf-btn-dark border-hover-dark"
                   >
+                    {/* <a className="octf-btn octf-btn-dark border-hover-dark"> */}
                     Exterior Designs
-                  </a>
+                    {/* </a> */}
+                  </Link>
                 </div>
               </div>
             </div>
@@ -92,14 +93,12 @@ export default function CustomSlider() {
                   is why, from the first day of the activity of the studio.
                 </p>
                 <div className="ot-button" style={{ alignSelf: "center" }}>
-                  <a
-                    href="https://asamaco.com/mail"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/serviceitem/3"
                     className="octf-btn octf-btn-dark border-hover-dark"
                   >
                     Interior Concepts
-                  </a>
+                  </Link>{" "}
                 </div>
               </div>
             </div>
@@ -125,14 +124,12 @@ export default function CustomSlider() {
                   is why, from the first day of the activity of the studio.
                 </p>
                 <div className="ot-button" style={{ alignSelf: "center" }}>
-                  <a
-                    href="https://asamaco.com/mail"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/serviceitem/0"
                     className="octf-btn octf-btn-dark border-hover-dark"
                   >
                     Design & Planning
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

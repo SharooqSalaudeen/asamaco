@@ -85,32 +85,38 @@ export default function ServiceItems() {
               <div className="widget widget_nav_menu">
                 <ul className="services-menu">
                   <li className={service === 0 ? "current-menu-item" : null}>
-                    <a href={() => false} onClick={() => setService(0)}>
+                    {/* eslint-disable-next-line */}
+                    <a onClick={() => setService(0)}>
                       <span>01.</span> Design &amp; Planning
                     </a>
                   </li>
                   <li className={service === 1 ? "current-menu-item" : null}>
-                    <a href={() => false} onClick={() => setService(1)}>
+                    {/* eslint-disable-next-line */}
+                    <a onClick={() => setService(1)}>
                       <span>02.</span> Exterior Design
                     </a>
                   </li>
                   <li className={service === 2 ? "current-menu-item" : null}>
-                    <a href={() => false} onClick={() => setService(2)}>
+                    {/* eslint-disable-next-line */}
+                    <a onClick={() => setService(2)}>
                       <span>03.</span> Custom Solutions
                     </a>
                   </li>
                   <li className={service === 3 ? "current-menu-item" : null}>
-                    <a href={() => false} onClick={() => setService(3)}>
+                    {/* eslint-disable-next-line */}
+                    <a onClick={() => setService(3)}>
                       <span>04.</span> Furniture &amp; Decor
                     </a>
                   </li>
                   <li className={service === 4 ? "current-menu-item" : null}>
-                    <a href={() => false} onClick={() => setService(4)}>
+                    {/* eslint-disable-next-line */}
+                    <a onClick={() => setService(4)}>
                       <span>05.</span> Creating Concept
                     </a>
                   </li>
                   <li className={service === 5 ? "current-menu-item" : null}>
-                    <a href={() => false} onClick={() => setService(5)}>
+                    {/* eslint-disable-next-line */}
+                    <a onClick={() => setService(5)}>
                       <span>06.</span> Customer`s Control
                     </a>
                   </li>

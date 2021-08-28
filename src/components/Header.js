@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+// import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [sidePanel, setSidePanel] = useState(false);
-  const handleSidePanel = () => {
-    setSidePanel(!sidePanel);
-  };
+  // const [sidePanel, setSidePanel] = useState(false);
+  // const handleSidePanel = () => {
+  //   setSidePanel(!sidePanel);
+  // };
   return (
     <>
       <header id="site-header" className="site-header header-transparent">
@@ -119,7 +120,7 @@ export default function Header() {
                           className="panel-btn octf-cta-icons"
                         >
                           <i
-                            onClick={() => handleSidePanel()}
+                            // onClick={() => handleSidePanel()}
                             className="ot-flaticon-menu"
                           />
                         </div>
@@ -254,11 +255,13 @@ export default function Header() {
       {/* Side Gallary */}
       <div
         id="side-panel"
-        className={sidePanel ? "side-panel side-panel-open" : "side-panel"}
+        className="side-panel"
+        // className={sidePanel ? "side-panel side-panel-open" : "side-panel"}
       >
+        {/* eslint-disable-next-line */}
         <a
           // href="#"
-          onClick={() => handleSidePanel()}
+          // onClick={() => handleSidePanel()}
           className="side-panel-close"
         >
           <i className="ot-flaticon-close-1" />
