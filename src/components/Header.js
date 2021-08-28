@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const [sidePanel, setSidePanel] = useState(false);
+  const handleSidePanel = () => {
+    setSidePanel(!sidePanel);
+  };
   return (
     <>
       <header id="site-header" className="site-header header-transparent">
@@ -34,7 +38,6 @@ export default function Header() {
                         </li>
                         <li className="menu-item-has-children">
                           <Link to="/services"> Services </Link>
-                          {/* <a href="#">Services</a> */}
                           <ul className="sub-menu">
                             <li>
                               <Link to="/serviceitem/0">
@@ -115,7 +118,10 @@ export default function Header() {
                           id="panel-btn"
                           className="panel-btn octf-cta-icons"
                         >
-                          <i className="ot-flaticon-menu" />
+                          <i
+                            onClick={() => handleSidePanel()}
+                            className="ot-flaticon-menu"
+                          />
                         </div>
                       </div>
                     </div>
@@ -246,8 +252,15 @@ export default function Header() {
         </div>
       </header>
       {/* Side Gallary */}
-      <div id="side-panel" className="side-panel">
-        <a href="/#" className="side-panel-close">
+      <div
+        id="side-panel"
+        className={sidePanel ? "side-panel side-panel-open" : "side-panel"}
+      >
+        <a
+          href="/#"
+          onClick={() => handleSidePanel()}
+          className="side-panel-close"
+        >
           <i className="ot-flaticon-close-1" />
         </a>
         <div className="side-panel-block">
@@ -273,7 +286,7 @@ export default function Header() {
                     <a href="/images/gallary/p3-gallery1.jpg">
                       <img
                         src="/images/gallary/p3-gallery1-150x150.jpg"
-                        // className
+                        className=""
                         alt=""
                       />
                     </a>
@@ -284,7 +297,7 @@ export default function Header() {
                     <a href="/images/gallary/p3-gallery2.jpg">
                       <img
                         src="/images/gallary/p3-gallery2-150x150.jpg"
-                        // className
+                        className=""
                         alt=""
                       />
                     </a>
@@ -295,7 +308,7 @@ export default function Header() {
                     <a href="/images/gallary/p3-gallery4.jpg">
                       <img
                         src="/images/gallary/p3-gallery4-150x150.jpg"
-                        // className
+                        className=""
                         alt=""
                       />
                     </a>
@@ -306,7 +319,7 @@ export default function Header() {
                     <a href="/images/gallary/p3-gallery5.jpg">
                       <img
                         src="/images/gallary/p3-gallery5-150x150.jpg"
-                        // className
+                        className=""
                         alt=""
                       />
                     </a>
@@ -317,7 +330,7 @@ export default function Header() {
                     <a href="/images/gallary/p4-gallery1.jpg">
                       <img
                         src="/images/gallary/p4-gallery1-150x150.jpg"
-                        // className
+                        className=""
                         alt=""
                       />
                     </a>
@@ -328,7 +341,7 @@ export default function Header() {
                     <a href="/images/gallary/p4-gallery2.jpg">
                       <img
                         src="/images/gallary/p4-gallery2-150x150.jpg"
-                        // className
+                        className=""
                         alt=""
                       />
                     </a>
