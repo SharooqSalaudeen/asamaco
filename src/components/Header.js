@@ -257,7 +257,7 @@ export default function Header() {
         className={sidePanel ? "side-panel side-panel-open" : "side-panel"}
       >
         <a
-          href="/#"
+          // href="#"
           onClick={() => handleSidePanel()}
           className="side-panel-close"
         >
