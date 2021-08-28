@@ -154,7 +154,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <a id="back-to-top" href="/#" className="show">
+      {/*eslint-disable-next-line */}
+      <a id="back-to-top" href="#" className="show">
         <i className="ot-flaticon-left-arrow"></i>
       </a>
     </>

@@ -2381,7 +2381,8 @@ section.is-stuck {
 @media only screen and (max-width: 320px) {
   .mobile_logo img {
     max-width: 230px;
-    max-height: 47px;
+    /* max-height: 47px; */
+    max-height: 76px;
   }
 }
 /*--------------------------------------------------------------
@@ -10669,4 +10670,16 @@ ol.style-default li:last-child {
 /* Srq */
 .services-menu {
   cursor: pointer;
+}
+
+.login-button-header {
+  margin-right: 40px;
+  align-self: center;
+}
+
+@media only screen and (max-width: 375px) {
+  .login-button-header {
+    margin-right: 10px;
+    padding: 0px;
+  }
 }

@@ -78,10 +78,7 @@ export default function Header() {
                           <i className="ot-flaticon-search" />
                         </div> */}
                       {/* Form Search on Header */}
-                      <div
-                        className="ot-button"
-                        style={{ alignSelf: "center", marginRight: "40px" }}
-                      >
+                      <div className="ot-button login-button-header">
                         <a
                           href="https://asamaco.com/mail"
                           target="_blank"
@@ -128,15 +125,19 @@ export default function Header() {
             </div>
           </div>
         </div>
+        {/* Mobile Menu */}
         <div className="header_mobile header-mobile-s3">
           <div className="container-fluid">
             <div className="octf-mainbar-row octf-row">
               <div className="octf-col">
                 <div className="mlogo_wrapper clearfix">
                   <div className="mobile_logo">
-                    <a href="index.html">
-                      <img src="images/logo.svg" alt="Theratio" />
-                    </a>
+                    <Link to="/">
+                      <img
+                        src="/images/asama-logo-transparent-white.png"
+                        alt="Asama Construction International Pvt Ltd"
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -146,10 +147,7 @@ export default function Header() {
                     <i className="ot-flaticon-search" />
                   </div> */}
                 {/* Form Search on Header */}
-                <div
-                  className="ot-button"
-                  style={{ alignSelf: "center", marginRight: "40px" }}
-                >
+                <div className="ot-button login-button-header">
                   <a
                     href="https://asamaco.com/mail"
                     target="_blank"
@@ -247,6 +245,7 @@ export default function Header() {
           </div>
         </div>
       </header>
+      {/* Side Gallary */}
       <div id="side-panel" className="side-panel">
         <a href="/#" className="side-panel-close">
           <i className="ot-flaticon-close-1" />
@@ -254,12 +253,12 @@ export default function Header() {
         <div className="side-panel-block">
           <div className="side-panel-wrap">
             <div className="the-logo">
-              <a href="index-html">
+              <Link to="/">
                 <img
                   src="/images/gallary/asama-logo-transparent-white1.png"
                   alt="Theratio"
                 />
-              </a>
+              </Link>
             </div>
             <div className="ot-heading">
               <h2 className="main-heading">Our Gallery</h2>
