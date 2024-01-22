@@ -12,7 +12,7 @@ import Services from './pages/Services'
 import ServiceItems from './pages/ServiceItems'
 import ScrollToTop from './components/utils/ScrollToTop'
 import TermsAndConditions from './pages/TermsAndConditions'
-import Privacy from './pages/Privacay'
+import Privacy from './pages/Privacy'
 
 export default function App() {
     // const [loading, setloading] = useState(true);

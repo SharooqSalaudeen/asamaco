@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import FactsCounter from '../components/FactsCounter'
-
 export default function Privacy() {
     return (
         <div>
@@ -59,14 +57,7 @@ export default function Privacy() {
                                             collection and use of information in
                                             accordance with this Privacy Policy.
                                             This Privacy Policy has been created
-                                            with the help of the{' '}
-                                            <a
-                                                href="https://www.termsfeed.com/privacy-policy-generator/"
-                                                target="_blank"
-                                            >
-                                                Privacy Policy Generator
-                                            </a>
-                                            .
+                                            with the help of the .
                                         </p>
                                         <h2>Interpretation and Definitions</h2>
                                         <h3>Interpretation</h3>
@@ -206,7 +197,6 @@ export default function Privacy() {
                                                     <a
                                                         href="https://asamaco.com"
                                                         rel="external nofollow noopener"
-                                                        target="_blank"
                                                     >
                                                         https://asamaco.com
                                                     </a>
@@ -337,15 +327,7 @@ export default function Privacy() {
                                             computer or mobile device when You
                                             go offline, while Session Cookies
                                             are deleted as soon as You close
-                                            Your web browser. You can learn more
-                                            about cookies on{' '}
-                                            <a
-                                                href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies"
-                                                target="_blank"
-                                            >
-                                                TermsFeed website
-                                            </a>{' '}
-                                            article.
+                                            Your web browser.
                                         </p>
                                         <p>
                                             We use both Session and Persistent
