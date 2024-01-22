@@ -145,7 +145,7 @@ export default function AboutUs() {
           <FactsCounter />
         </div>
       </section>
-      <section className="how-it-work">
+      {/* <section className="how-it-work">
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-md-12 mb-5 mb-lg-0 align-self-center">
@@ -233,7 +233,7 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
