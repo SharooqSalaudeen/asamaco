@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import FactsCounter from '../components/FactsCounter'
-
 export default function TermsAndConditions() {
     return (
         <div>
