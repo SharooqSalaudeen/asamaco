@@ -30,6 +30,26 @@ export default function Footer() {
                                     design, construction, interior design and
                                     contruction machienaries.
                                 </p>
+                                <ul className="footer-list">
+                                    <li className="footer-list-item">
+                                        <span className="list-item-icon">
+                                            <i className="ot-flaticon-place" />
+                                        </span>
+                                        <span className="list-item-text">
+                                            V/364/b, Chempumoola, Azhoor.P.O,
+                                            Thiruvananthapuram
+                                        </span>
+                                    </li>
+                                    <li className="footer-list-item">
+                                        <span className="list-item-icon">
+                                            <i className="ot-flaticon-mail" />
+                                        </span>
+                                        <span className="list-item-text">
+                                            mis@asamaco.com
+                                        </span>
+                                    </li>
+                                </ul>
+
                                 {/* <div className="footer-social list-social">
                   <ul>
                     <li>
@@ -56,37 +76,74 @@ export default function Footer() {
                 </div> */}
                             </div>
                         </div>
-                        <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4 mb-xl-0">
+                        <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4 mb-xl-0 ">
                             <div className="widget-footer">
-                                <h6>Contacts</h6>
+                                <h6>Company</h6>
                                 <ul className="footer-list">
                                     <li className="footer-list-item">
-                                        <span className="list-item-icon">
-                                            <i className="ot-flaticon-place" />
-                                        </span>
-                                        <span className="list-item-text">
-                                            V/364/b, Chempumoola, Azhoor.P.O,
-                                            Thiruvananthapuram
-                                        </span>
+                                        <Link to="/">Home</Link>
                                     </li>
                                     <li className="footer-list-item">
-                                        <span className="list-item-icon">
-                                            <i className="ot-flaticon-mail" />
-                                        </span>
-                                        <span className="list-item-text">
-                                            info@asamaco.com
-                                        </span>
+                                        <Link to="/aboutus">About Us</Link>
                                     </li>
-                                    {/* <li className="footer-list-item">
+                                    <li className="footer-list-item">
+                                        <Link to="/contacts">Contact Us</Link>
+                                    </li>
+                                    <li className="footer-list-item">
+                                        <Link to="/terms">
+                                            Terms and Conditions
+                                        </Link>
+                                    </li>
+                                    <li className="footer-list-item">
+                                        <Link to="/privacy">
+                                            Privacy Policy
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4 mb-md-0">
+                            <div className="widget-footer">
+                                <h6>Services</h6>
+                                <ul className="footer-list">
+                                    <li className="footer-list-item">
+                                        <Link to="/serviceitem/0">
+                                            Design &amp; Planning
+                                        </Link>
+                                    </li>
+                                    <li className="footer-list-item">
+                                        <Link to="/serviceitem/1">
+                                            Exterior Design
+                                        </Link>
+                                    </li>
+                                    <li className="footer-list-item">
+                                        <Link to="/serviceitem/2">
+                                            Custom Solutions
+                                        </Link>
+                                    </li>
+                                    <li className="footer-list-item">
+                                        <Link to="/serviceitem/3">
+                                            Furniture &amp; Decor
+                                        </Link>
+                                    </li>
+                                    <li className="footer-list-item">
+                                        <Link to="/serviceitem/4">
+                                            Creating Concept
+                                        </Link>
+                                    </li>
+                                    <li className="footer-list-item">
+                                        <Link to="/serviceitem/5">
+                                            Author’s Control
+                                        </Link>
+                                    </li>
+                                </ul>
+                                {/* <li className="footer-list-item">
                     <span className="list-item-icon">
                       <i className="ot-flaticon-phone-call" />
                     </span>
                     <span className="list-item-text">+1 800 456 789 123</span>
                   </li> */}
-                                </ul>
                             </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4 mb-md-0">
                             {/* <div className="widget-footer widget-contact">
                 <h6>Latest Projects</h6>
                 <ul>
